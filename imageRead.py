@@ -36,4 +36,13 @@ print img.shape
 
 imgarr = np.array(img) 
 
-print imgarr
+#print imgarr
+
+imgdata = imgarr.astype(int)
+
+print imgdata
+
+#np.savetxt('test.out', imgarr, delimiter=',')
+
+np.savetxt('test.out', imgarr.astype(int), fmt='%i', delimiter=",")
+
