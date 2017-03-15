@@ -32,7 +32,7 @@ plt.imshow(img, cmap = 'gray', interpolation = 'bicubic')
 plt.xticks([]), plt.yticks([])  # to hide tick values on X and Y axis
 plt.show()  
 
-print img.shape
+print (img.shape)
 
 imgarr = np.array(img) 
 
@@ -40,7 +40,7 @@ imgarr = np.array(img)
 
 imgdata = imgarr.astype(int)
 
-print imgdata
+print (imgdata)
 
 #np.savetxt('test.out', imgarr, delimiter=',')
 
